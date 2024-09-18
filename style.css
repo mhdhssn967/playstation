@@ -1,0 +1,1042 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0px;
+    z-index: 1;
+}
+.sony{
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+.sony img{
+    width: 100px;
+    padding: 10px;
+    filter: invert(1);
+}
+.logo{
+    width: 50px;
+    margin: 25px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.menuitem{
+    display: flex;
+    list-style: none;
+}
+.menulist{
+    margin-left: 25px;
+}
+.navlinks{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.navlinks:hover{
+    color: #005499;
+}
+.signin{
+    background-color: #005499;
+    color: white;
+    padding:10px 20px;
+    border-radius: 18px;
+}
+.signin:hover{
+    background-color: #043b68;
+}
+.searchbox{
+    height: 40px;
+    padding: 10px;
+    width: 150px;
+    margin-left: 10px;
+}
+.searchbox:hover{
+    border: solid 2px black;
+}
+.fa-magnifying-glass{
+    margin-left: -25px;
+}
+.landing{
+    background-image: url(./assets/Astro\ Bot\ PS5.webp);
+    background-size: cover;
+    height: 720px;
+}
+
+.landingtext{
+    color: white;
+    padding: 160px 150px;
+    background-image: linear-gradient(to right, black, transparent);
+    width: 500px;
+    height:55%;
+}
+#astrologo{
+    width: 350px;
+}
+.astrohead{
+    padding-top: 30px;
+    font-size: 60px;
+    font-weight: 100;
+}
+.astropara{
+    margin-top: 30px;
+    line-height: 25px; 
+    font-weight: 100;   
+}
+.games{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.buyastro{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    margin-top: 35px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 800;
+}
+.gamesimg{
+    width: 220px;
+    border-radius: 15px;
+    margin: 4px;
+    transition: 0.3s;
+    padding: 4px;
+    border:solid 3px transparent;
+
+}
+.gamesimg:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px 1px rgba(24, 23, 23, 0.6);
+    transition: 0.3s;
+    border: solid 3px blue;
+}
+.introone{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 6%;
+}
+.introicon{
+    filter: invert(1);
+    width: 50px;
+}
+.ps5img{
+    width: 700px;
+    margin-left: 1%;
+}
+.introhead{
+    font-weight: 10;
+    font-size: 70px;
+}
+.introhead2{
+    margin-top: 8%;
+    font-size: 40px;
+    font-weight: 100;
+    color: #6bace0;
+}
+.p1{
+    font-size: 20px;
+    margin-top: 2%;
+    width: 500px;
+}
+.listtopic{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+.listdescrip{
+    font-weight: 100;
+    margin-left: 9%;
+    margin-top: -1%;
+    margin-right: 20%;
+}
+.introicon{
+    margin-right:2%;
+}
+
+.introbuttons{
+    margin-left: 9%;
+    margin-top: 2%;
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    /* background-color: #043b68; */
+}
+.buttondiv{
+    border:#6bace0;
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    transition: 0.3s;
+
+}
+.buttondiv:hover{
+    border: solid 1px #6bace0;
+    transition: 0.3s;
+}
+.buttondiv2{
+    border:rgb(201, 30, 30);
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    transition: 0.3s;
+
+}
+.buttondiv2:hover{
+    border: solid 1px rgb(201, 30, 30);
+    transition: 0.3s;
+
+}
+.findbutton{
+    background-color:#6bace0;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 700;
+    margin: 5px;
+    transition: 0.3s;
+
+}
+
+.findbutton2{
+    background-color:rgb(201, 30, 30);
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 700;
+    margin: 5px;
+    transition: 0.3s;
+}
+.intro {
+    position: relative;
+    width: 100%; 
+    height: 500px; 
+}
+
+.introone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%; 
+    height: 100%; 
+    /* background-color: rgba(0, 0, 0, 0.5); Example background with transparency */
+}
+.sets{
+    padding-top: 3%;
+    display: flex;
+    width: 100%;
+    height: 220px;
+    margin-top: 20%;
+    overflow-x: auto;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.setimg{
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 5px 10px rgba(24, 23, 23, 0.3);
+    transition: 0.3s;
+}
+.sets::-webkit-scrollbar {
+    height: 15px; 
+  }
+  
+  .sets::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .sets::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border: 2px solid transparent;
+  }
+  
+  .sets::-webkit-scrollbar-thumb:hover {
+    background-color: transparent;
+  }
+
+.i1.i2,.i3,.i4,.i5,.i6,.i7,.i8,.i9{
+    opacity: 0;
+}
+.i1{
+    animation: introduce 30s infinite;
+}
+.i2{
+    animation: introduce2 30s infinite;
+}
+.i3{
+    animation: introduce3 30s infinite;
+}
+.i4{
+    animation: introduce4 30s infinite;
+}
+.i5{
+    animation: introduce5 30s infinite;
+}
+.i6{
+    animation: introduce6 30s infinite;
+}
+.i7{
+    animation: introduce7 30s infinite;
+}
+.i8{
+    animation: introduce8 30s infinite;
+}
+.i9{
+    animation: introduce9 30s infinite;
+}
+.i2,.i3,.i4,.i5,.i6,.i7,.i8,.i9{
+    padding-top: 10%;
+}
+
+@keyframes introduce {
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes introduce2 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes introduce3 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes introduce4 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes introduce5 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes introduce6 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes introduce7 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes introduce8 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes introduce9 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+.introcontainer{
+    background-color: #043b68;
+    position: relative;
+}
+.newgamehead{
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: 5%;
+}
+.newgamebutton{
+    margin: 3%;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 90px;
+    border: solid white;
+    transition: 0.4s;
+
+}
+.newgamebutton:hover{
+    background-color: transparent;
+    color: white;
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.setimg:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0px 5px 20px rgba(24, 23, 23, 0.8);
+}
+.newgamecontainer{
+    background-color: rgb(20, 20, 20);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1100px;
+}
+.newgames{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+.newgameimg{
+    height: 300px; 
+    width: 260px;
+    border-radius: 15px;
+    /* width: auto;   */
+    transition: 0.3s;
+    object-fit: cover;
+}
+.newgamesname{
+    color: white;
+    margin-top: 3%;
+    transition: 0.3s;
+}
+.newgamediv:hover .newgamediv{
+    transition: 0.3s;
+}
+.newgames:hover .newgameimg {
+    filter: brightness(0.3); 
+}
+.newgames:hover .newgamesname {
+    filter: brightness(0.3); 
+}
+.newgamediv:hover .newgameimg{
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+.newgamediv:hover .newgamesname{
+    transform: scale(1.05);
+    filter: brightness(1);
+    transition: 0.1s;
+}
+.plus{
+    height: 700px;
+    background-image: url(./assets/olay/play-play-play-ps-plus-background-desktop-01-ja-jp-03jul23.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.plustitle{
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.pluslogo{
+    width: 60px;
+    margin-right: 10px;  
+}
+.plusheadtext{
+    font-weight: 10;
+    margin-top: 2%;
+    font-size: 40px;
+    text-align: center;
+}
+.plusparatext{
+    margin-top: 1%;
+    opacity: 0.6;
+    font-weight: 500;
+}
+.pluscont{
+    background-image: url(./assets/olay/spiderman.webp);
+    background-size: cover;
+    height: 1000px;
+    width: 1100px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px ;
+    margin-top: 2%;
+}
+.prembut{
+    color: yellow;
+    background-image: linear-gradient(to right, rgb(44, 44, 44), rgb(59, 58, 58));
+    padding: 0.5% 4%;
+    width: 150px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 15px;
+    border: solid white 0.5px;
+}
+.premium{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 200px 5px 30px 40px;
+}
+.premhead{
+    margin-top: 1% ;
+    font-size: 25px;
+    color: white;
+}
+.premtext{
+    margin-top: 2%;
+    font-size: 15px;
+    color: white;
+}
+.plusbutton{
+    background-color: #035ec7;
+    padding: 15px 30px;
+    font-weight: 600;
+    color: white;
+    border-radius: 25px;
+}
+.plusbuttondiv{
+    border: solid transparent;
+    margin-top: 3%;
+    padding: 2px;
+    border-radius: 35px;
+    transition: 0.2s;
+    margin-bottom: 4%;
+}
+.plusbuttondiv:hover{
+    border: solid #1157a7;
+    transition: 0.2s;
+    transform: scale(1.03);
+
+}
+.plusbuttondiv:hover .plusbutton{
+    background-color: #1157a7;
+    transition: 0.2s;
+}
+.newreal{
+    background-image: url(./assets/jeet/psvr2-register-homepage-hero-desktop-01-en-14nov22.webp);
+    height: 500px;
+    background-size: cover;
+    color: white;
+    padding: 10% 4% 0px 10%;
+}
+.newreal p{
+    width: 550px;
+    margin-top: 2%;
+    letter-spacing: 2px;
+}
+.newreal h1{
+    font-weight: 100;
+    font-size: 40px;
+}
+.newreal h3{
+    font-size: 18px;
+    margin-top: 2%;
+}
+.introbuttonsreal{
+    margin-top: 2%;
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+   
+    /* background-color: #043b68; */
+}
+.newreal2{
+        background-image: url(./assets/jeet/this-month-on-playstation-sep-homepage-background-desktop-02-en-23aug24.webp);
+        height: 300px;
+        background-size: cover;
+        color: white;
+        padding: 7% 4% 0px 10%;
+}
+.newreal2 p{
+    width: 550px;
+    margin-top: 2%;
+    color: rgb(192, 186, 186);
+    letter-spacing: 2px;
+}
+.newreal2 h1{
+    font-weight: 100;
+    font-size: 40px;
+}
+.newreal2 h3{
+    font-size: 18px;
+    margin-top: 2%;
+}
+.carddiv{
+    background-color: #432f6f;
+    height: 500px;
+    box-shadow: 0px -100px 80px 30px #432f6f;
+    display: flex;
+    justify-content: center;
+}
+.monthcard{
+    color: white;
+    margin-top: 2%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 25px;
+    background-color: transparent;
+    border: solid transparent;
+    transition: 0.3s;
+    height: 400px;
+}
+.monthcard img{
+    border-radius: 15px;
+    width: 500px;
+}
+.monthcard h2{
+    font-weight: 100;
+    margin-top: 1%;
+}
+.monthcard p{
+    margin-top: 0.5%;
+}
+
+.monthcard:hover{
+    background-color: #19191a;
+    border: solid white 0.5px;
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px black;
+    transform: translateY(-30px);
+}
+.monthbutton{
+    background-color: #ffffff;
+    padding: 15px 20px;
+    font-weight: 600;
+    color: rgb(15, 15, 15);
+    border-radius: 25px;
+    width: 120px;
+    text-align: center;
+}
+.monthbuttondiv{
+    border: solid transparent;
+    /* margin-top: 3%; */
+    padding: 2px;
+    border-radius: 35px;
+    transition: 0.2s;
+    margin-bottom: 4%;
+}
+.monthbuttondiv:hover{
+    border: solid #ffffff;
+    transition: 0.2s;
+    transform: scale(1.03);
+
+}
+.monthbutton:hover .plusbutton{
+    background-color: #1157a7;
+    transition: 0.2s;
+}
+.thismonth{
+    background-color: #432f6f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.storeimg{
+    width: 50px;
+}
+.storelogo{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.storelogo h3{
+    margin-left: 0.5%;
+    font-size: 40px;
+    font-weight: 100;
+    
+}
+.store h4{
+    font-size: 60px;
+    font-weight: 100;
+    width: 550px;
+    margin-top: 1%;
+    color: #838386;
+}
+.storetext{
+    font-size: 15px;
+    width: 480px;
+    margin-top: 0.5%;
+}
+.storeimage img{
+    width: 700px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.store{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.storebutton{
+    background-color: #bb1818;
+    padding: 10px 1px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    width: 150px;
+    text-align: center;
+}
+.storebuttondiv{
+    margin-top: 2%;
+    border: solid transparent;
+    /* margin-top: 3%; */
+    padding: 2px;
+    border-radius: 35px;
+    transition: 0.2s;
+    width: 100px;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.storebuttondiv:hover{
+    border: solid #bb1818;
+    transition: 0.2s;
+    transform: scale(1.03);
+}
+.storeimage:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.socialmedia{
+    height: 500px;
+    background-color: #f3f3f8;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialmediahead{
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    color: #4e4e50;
+    padding-top: 3%;
+}
+.sociallogos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+.sociallogos img{
+    width: 150px;
+    transition: 0.3s;
+
+}
+.sociallogos img:hover{
+    transform: scale(1.09);
+    transition: 0.3s;
+    cursor: pointer;
+}
+footer{
+    height: 400px;
+    background-color: #005499;
+}
+.footerlogo{
+    width: 300px;
+    filter: invert();
+    margin: 2% 1% 1% 1%;
+}
+.footertext{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footertext ul{
+    list-style: none;
+    color: white;
+    margin-top: 2%;
+}
+.footertext ul li{
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 5%;
+    text-decoration: none;
+}
+.footertext ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.footertext li img{
+    width: 25px;
+    filter: invert();
+    }
+.listsocial{
+    margin-left: -3%;
+}
+.footertext ul li a:hover{
+    color: rgb(201, 198, 198);
+}
